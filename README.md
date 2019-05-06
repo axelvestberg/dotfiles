@@ -6,3 +6,4 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
 ## TODO
 * Write setup script
 * Write basic .bash_profile
+* Write it to work for both ubuntu and macOS
