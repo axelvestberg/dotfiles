@@ -12,6 +12,12 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
 * rbenv
 * nvm
 * heroku
+* rcm
+* zip
+* spotify
+* curl
+* node
+* nvm
 
 ## TODO
 * Write setup script
