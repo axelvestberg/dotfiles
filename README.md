@@ -18,8 +18,9 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
 * curl
 * node
 * nvm
+* i3gaps
 
 ## TODO
-* Write setup script
+* Write setup script (post_install_script.sh)
 * Write basic .bash_profile
 * Write it to work for both ubuntu and macOS
