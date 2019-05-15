@@ -31,14 +31,14 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
     * sudo apt-get install rcm
 
 ## Important config files that should be inside this repo
-~/.config/i3/config
-~/.oh-my-zsh/oh-my-zsh.sh
-~/.zshrc
-~/useful-scripts
-~/post_install_script.sh
+~/.config/i3/config  
+~/.oh-my-zsh/oh-my-zsh.sh  
+~/.zshrc  
+~/useful-scripts  
+~/post_install_script.sh  
 
 ## Code
-mkdir ~/code && cd ~/code
+mkdir ~/code && cd ~/code  
 git clone chosen repos
 
 ## Notes
