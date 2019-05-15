@@ -1,0 +1,28 @@
+##############################################
+##                                          ##
+##      COLLECTION OF USEFUL COMMANDS       ##
+##                                          ##
+##############################################
+
+### WIFI & NETWORK COMMANDS ###
+
+# Lists all available wifis
+nmcli dev wifi
+
+# Connects to wifi with APname
+nmcli device wifi connect 'APname' password 'password'
+example: nmcli device wifi connect 'Code & Design' password 'codesign'
+
+### WIFI & NETWORK COMMANDS END ###
+
+### SCREEN & GUI COMMANDS ###
+
+# See available screens and resolutions
+xrandr
+
+# Change screen resolution
+xrandr --output eDP-1 --mode 1920x1080
+xrandr ..output VGA/eDP-1/LVDS --mode 1920x1080
+xrandr --output LVDS --mode 1024x768
+
+### SCREEN & GUI COMMANDS END ###

@@ -19,8 +19,31 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
 * node
 * nvm
 * i3gaps
+* polybar
+* zsh
+* oh-my-zsh
+* oh-my-zsh theme "pi"
+* feh
+* neofetch
+* rcm
+    * sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+    * sudo apt-get update
+    * sudo apt-get install rcm
+
+## Important config files that should be inside this repo
+~/.config/i3/config
+~/.oh-my-zsh/oh-my-zsh.sh
+~/.zshrc
+~/useful-scripts
+~/post_install_script.sh
+
+## Code
+mkdir ~/code && cd ~/code
+git clone chosen repos
+
+## Notes
+> each installation that requires dependencies should try to install them in that section, this will make the script bigger but it will also make it more manageable in case of future changes
 
 ## TODO
 * Write setup script (post_install_script.sh)
-* Write basic .bash_profile
 * Write it to work for both ubuntu and macOS
