@@ -56,14 +56,20 @@ sudo apt install \
 	make
 
 # git
+sudo apt-get install git
 
 # curl
+sudo apt-get install curl
 
 # wget
+sudo apt-get install wget
 
 # rcm
+sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo apt-get update
+sudo apt-get install rcm
 
-#postgresql
+# postgresql
 sudo apt-get install \
 	postgresql \
 	postgresql-contrib
@@ -84,7 +90,10 @@ cd polybar && ./build.sh
 
 # vscode
 sudo apt update
-sudo apt install software-properties-common apt-transport-https wget
+sudo apt-get install \
+	software-properties-common \
+	apt-transport-https \
+	wget
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
@@ -92,7 +101,7 @@ sudo apt install code
 
 # rbenv
 sudo apt update
-sudo apt install \
+sudo apt-get install \
 	autoconf \
 	bison \
 	build-essential \
@@ -125,10 +134,10 @@ sudo apt-get update && apt-get install -y heroku
 cd ~ && git clone https://github.com/axelvestberg/dotfiles.git
 
 # clone code repositories
-mkdir ~/code &&
-git clone git@github.com:axelvestberg/pwgen-react.git
-git clone git@github.com:axelvestberg/public_html.git
-git clone git@github.com:studiocodedesign/boostified-rails.git
+mkdir ~/code
+git clone git@github.com:axelvestberg/pwgen-react.git ~/code
+git clone git@github.com:axelvestberg/public_html.git ~/code
+git clone git@github.com:studiocodedesign/boostified-rails.git ~/code
 
 # npm & nodejs with nvm
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
@@ -139,13 +148,17 @@ source ~/.profile
 nvm install node
 nvm use node
 
-# zip
+# zip - update this when i find a good zip package that i want to use
 
 # spotify
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
 sudo apt-get install spotify-client
+
+# google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # zsh
 
@@ -154,7 +167,9 @@ sudo apt-get install spotify-client
 # oh-my-zsh theme "pi"
 
 # feh
+sudo apt-get install feh
 
 # neofetch
+sudo apt-get install neofetch
 
 # Move some of the config files to the right places e.g ~/.config/i3/config

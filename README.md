@@ -45,5 +45,6 @@ git clone chosen repos
 > each installation that requires dependencies should try to install them in that section, this will make the script bigger but it will also make it more manageable in case of future changes
 
 ## TODO
+* Organize the structure of the post_install_script and start testing it on a virtual machine
 * Write setup script (post_install_script.sh)
 * Write it to work for both ubuntu and macOS
