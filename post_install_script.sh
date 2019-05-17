@@ -98,6 +98,8 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
 sudo apt install code
+# changes the limit of files that can be monitored
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 
 # rbenv
 sudo apt update
@@ -126,9 +128,7 @@ gem install bundler
 gem install pg
 
 # heroku-cli
-echo "deb https://cli-assets.heroku.com/branches/stable/apt ./" > /etc/apt/sources.list.d/heroku.list
-wget -qO- https://cli-assets.heroku.com/apt/release.key | apt-key add -
-sudo apt-get update && apt-get install -y heroku
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # clone dotfiles
 cd ~ && git clone https://github.com/axelvestberg/dotfiles.git
@@ -140,7 +140,7 @@ git clone git@github.com:axelvestberg/public_html.git ~/code
 git clone git@github.com:studiocodedesign/boostified-rails.git ~/code
 
 # npm & nodejs with nvm
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
