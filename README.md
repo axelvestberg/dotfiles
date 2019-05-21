@@ -35,7 +35,8 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
 ~/.oh-my-zsh/oh-my-zsh.sh  
 ~/.zshrc  
 ~/useful-scripts  
-~/post_install_script.sh  
+~/post_install_script.sh
+~/.config/Code/User/settings.json
 
 ## Code
 mkdir ~/code && cd ~/code  

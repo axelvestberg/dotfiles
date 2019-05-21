@@ -64,6 +64,15 @@ sudo apt-get install curl
 # wget
 sudo apt-get install wget
 
+# npm & nodejs with nvm
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+source ~/.profile
+nvm install node
+nvm use node
+
 # rcm
 sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
 sudo apt-get update
@@ -73,6 +82,12 @@ sudo apt-get install rcm
 sudo apt-get install \
 	postgresql \
 	postgresql-contrib
+
+# setup postgres user / create new user with same name as 'whoami'
+
+# create-react-app
+npm install -g \
+	create-react-app
 
 # i3-gaps-next
 git clone https://www.github.com/Airblader/i3 i3-gaps
@@ -138,15 +153,6 @@ mkdir ~/code
 git clone git@github.com:axelvestberg/pwgen-react.git ~/code
 git clone git@github.com:axelvestberg/public_html.git ~/code
 git clone git@github.com:studiocodedesign/boostified-rails.git ~/code
-
-# npm & nodejs with nvm
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-source ~/.profile
-nvm install node
-nvm use node
 
 # zip - update this when i find a good zip package that i want to use
 
