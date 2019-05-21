@@ -4,10 +4,22 @@
 ##                                          ##
 ##############################################
 
+### GENERAL COMMANDS ###
+
+man + [package name] returns a manual for all commands with that package
+
+### GENERAL COMMANDS END ###
+
 ### WIFI & NETWORK COMMANDS ###
 
 # Lists all available wifis
 nmcli dev wifi
+
+# Turn on wifi
+nmcli radio wifi on
+
+# See network manual
+man nmcli
 
 # Connects to wifi with APname
 nmcli device wifi connect 'APname' password 'password'
