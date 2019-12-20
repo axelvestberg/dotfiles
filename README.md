@@ -6,15 +6,11 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
 ## List of applications & Packages to be installed
 * google chrome
 * vscode
-* zsh
 * npm
 * git
-* rbenv
 * nvm
 * heroku
-* rcm
 * zip
-* spotify
 * curl
 * node
 * nvm
@@ -23,12 +19,16 @@ This will be my repo for maintaining and setting up my local dev machine. It sho
 * zsh
 * oh-my-zsh
 * oh-my-zsh theme "pi"
-* feh
 * neofetch
+
+## Might install these application & packackges in the future
 * rcm
     * sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
     * sudo apt-get update
     * sudo apt-get install rcm
+* spotify
+* rbenv
+* feh
 
 ## Important config files that should be inside this repo
 ~/.config/i3/config  
